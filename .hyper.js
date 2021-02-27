@@ -55,16 +55,7 @@ module.exports = {
     css: '',
 
     // custom CSS to embed in the terminal window
-    termCSS: `
-    x-screen a {
-        color: #ff2e88;
-        text-decoration: none;
-    }
- 
-    x-screen a.hover {
-        text-decoration: underline;
-    }
-`,
+    termCSS: '',
 
     // if you're using a Linux setup which show native menus, set to false
     // default: `true` on Linux, `true` on Windows, ignored on macOS
@@ -159,7 +150,18 @@ module.exports = {
         activityColor: 'salmon',
         closeAlign: 'right',
         activityPulse: true,
-    }
+    },
+    hyperSearchUI: {
+      inputBorderRadius: 5
+    },
+	hyperline: {
+	  plugins: ["hostname", "ip", "cpu", "memory",]
+	},
+	hyperStatusLine: {
+	  dirtyColor: 'salmon',
+	  footerTransparent: false,
+	  aheadColor: 'ivory',
+	},
   },
 
   // a list of plugins to fetch and install from npm
@@ -172,6 +174,11 @@ module.exports = {
     'hyper-opacity',
     'hyper-tabs-enhanced',
     'hyper-dnd-tabs',
+	'hyper-alt-click',
+	'hyper-search',
+	'hyper-drop-file',
+	'hyper-snazzy',
+	'hyper-statusline'
   ],
 
   // in development, you can create a directory under
@@ -182,6 +189,11 @@ module.exports = {
   keymaps: {
     // Example
     // 'window:devtools': 'cmd+alt+o',
+	"editor:movePreviousWord": "alt+left",
+	"editor:moveNextWord": "alt+right",
+	"editor:deletePreviousWord": "alt+backspace",
+	"editor:deleteNextWord": "alt+del",
+	"editor:deleteBeginningLine": "alt+home",
+	"editor:deleteEndLine": "alt+end",
   },
 };
-
