@@ -1,0 +1,19 @@
+# List Directories
+alias ll="ls -lAhF -color --time-style=long-iso --color"
+
+# Change Directories
+alias ..="cd .."
+alias ..2="cd ../.."
+alias ..3="cd ../../.."
+alias ..4="cd ../../../.."
+alias ..5="cd ../../../../.."
+alias ..6="cd ../../../../../.."
+
+# Copy File
+alias cp='cp -i'
+
+# Move File
+alias mv='mv -i'
+
+# Untar
+alias untar='tar xvf'
