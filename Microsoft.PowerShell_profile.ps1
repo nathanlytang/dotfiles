@@ -7,6 +7,7 @@ Import-Module -Name Microsoft.WinGet.CommandNotFound
 Import-Module -Name Terminal-Icons
 Import-Module Get-ChildItemColor
 Import-Module PSReadLine
+Import-Module CredentialManager
 
 
 # ================================
