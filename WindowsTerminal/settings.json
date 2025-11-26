@@ -10,7 +10,8 @@
 		},
 		{
 			"command": {
-				"action": "splitPane"
+				"action": "splitPane",
+				"splitMode": "duplicate"
 			},
 			"id": "User.splitPane.91AB55B1"
 		}
@@ -42,12 +43,12 @@
 			"keys": "ctrl+shift+pgup"
 		},
 		{
-			"id": "Terminal.NextTab",
-			"keys": "ctrl+tab"
-		},
-		{
 			"id": null,
 			"keys": "ctrl+shift+1"
+		},
+		{
+			"id": "Terminal.NextTab",
+			"keys": "ctrl+tab"
 		},
 		{
 			"id": "Terminal.OpenSettingsFile",
@@ -71,11 +72,11 @@
 		},
 		{
 			"id": null,
-			"keys": "alt+9"
+			"keys": "ctrl+shift+8"
 		},
 		{
 			"id": null,
-			"keys": "ctrl+shift+8"
+			"keys": "alt+9"
 		},
 		{
 			"id": null,
@@ -183,7 +184,9 @@
 				"source": "Windows.Terminal.Azure"
 			},
 			{
+				"bellStyle": "none",
 				"colorScheme": "Campbell",
+				"experimental.repositionCursorWithMouse": true,
 				"font": {
 					"face": "CaskaydiaCove Nerd Font",
 					"size": 10
@@ -251,6 +254,18 @@
 				"hidden": false,
 				"name": "Git Bash",
 				"source": "Git"
+			},
+			{
+				"guid": "{02a8678a-c24e-578d-8bd5-10ee22db8cc3}",
+				"hidden": false,
+				"name": "Developer Command Prompt for VS 2022",
+				"source": "Windows.Terminal.VisualStudio"
+			},
+			{
+				"guid": "{513ba535-4cbc-5791-8c68-ef01bc9d14e4}",
+				"hidden": false,
+				"name": "Developer PowerShell for VS 2022",
+				"source": "Windows.Terminal.VisualStudio"
 			}
 		]
 	},
